@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.get_phone_number">
+
+    <!-- Permissões necessárias -->
+   <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+   <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+    <!-- Essa permissão funciona apenas para apps do sistema -->
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- Necessário para evitar erros de build -->
+    <application />
+</manifest>
