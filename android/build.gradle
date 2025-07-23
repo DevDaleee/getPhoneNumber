@@ -27,7 +27,7 @@ apply plugin: "kotlin-android"
 android {
     namespace = "com.example.get_phone_number"
 
-    compileSdk = 35
+compileSdk = 33
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
