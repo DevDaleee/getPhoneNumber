@@ -1,12 +1,15 @@
 # get_phone_number
 
-Plugin Flutter para obter o número de telefone do chip SIM em dispositivos Android.
+A new flutter plugin project.
 
-## Instalação
+## Getting Started
 
-Adicione ao `pubspec.yaml`:
+This project is a starting point for a Flutter
+[plug-in package](https://flutter.dev/developing-packages/),
+a specialized package that includes platform-specific implementation code for
+Android and/or iOS.
 
-```yaml
-get_phone_number:
-  git:
-    url: https://github.com/seuusuario/get_phone_number.git
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
+

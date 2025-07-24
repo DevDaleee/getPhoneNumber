@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get_phone_number/get_phone_number.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +26,12 @@ class _PhoneNumberScreenState extends State<PhoneNumberScreen> {
   String? phone;
 
   void _getPhone() async {
+    final status = await Permission.phone.request();
+    if (!status.isGranted) {
+      setState(() => phone = 'Permissão negada');
+      return;
+    }
+
     final number = await GetPhoneNumber.getPhoneNumber();
     setState(() => phone = number ?? 'Número não disponível');
   }
